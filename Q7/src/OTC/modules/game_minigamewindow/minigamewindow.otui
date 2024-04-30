@@ -1,0 +1,34 @@
+MainWindow
+  id: minigamewindow
+  !text: tr('Mini Game')
+  size: 550 400
+  @onEscape: toggle()
+
+  TextList
+    id: minigame
+    anchors.top: parent.top
+    anchors.centerIn: parent
+    anchors.bottom: next.top
+    margin-bottom: 10
+    padding: 1
+    width: 500
+    focusable: false
+
+  Button
+    id: buttonCancel
+    !text: tr('Close')
+    width: 64
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    @onClick: toggle()
+
+  Button
+    id: buttonMiniGame
+    !text: tr('Jump!')
+    width: 64
+    anchors.right: minigame.right
+    anchors.top: minigame.top
+    margin-right: 20
+    margin-top: 0
+    @onClick: resetButton()
+

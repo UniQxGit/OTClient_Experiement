@@ -1,0 +1,9 @@
+Module
+  name: game_minigameWindow
+  description: View available spells
+  author: Lee, John
+  website: https://github.com/edubart/otclient
+  sandboxed: true
+  scripts: [ minigamewindow ]
+  @onLoad: init()
+  @onUnload: terminate()
